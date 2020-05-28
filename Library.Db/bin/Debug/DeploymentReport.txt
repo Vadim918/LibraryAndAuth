@@ -1,0 +1,30 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Author] (Table)
+       [dbo].[Book] (Table)
+       [dbo].[Book].[IX_dbo_Book_PublisherId] (Index)
+       [dbo].[BookAuthor] (Table)
+       [dbo].[BookAuthor].[IX_dbo_BookAuthor_BookId] (Index)
+       [dbo].[BookAuthor].[IX_dbo_BookAuthor_AuthorId] (Index)
+       [dbo].[Publisher] (Table)
+       [dbo].[Role] (Table)
+       [dbo].[User] (Table)
+       [dbo].[UserRole] (Table)
+       [dbo].[FK_dbo_Book_dbo_Publisher] (Foreign Key)
+       [dbo].[FK_dbo_BookAuthor_dbo_Book] (Foreign Key)
+       [dbo].[FK_dbo_BookAuthor_dbo_Author] (Foreign Key)
+       [dbo].[FK_UserRole_User] (Foreign Key)
+       [dbo].[FK_UserRole_Role] (Foreign Key)
+       [dbo].[FK_dbo_Book_dbo_Rating] (Check Constraint)
+
+** Supporting actions

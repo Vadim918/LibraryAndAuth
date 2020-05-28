@@ -1,0 +1,12 @@
+D:\IS-Soft\Git\LibraryAndAuth\Library.Infrastructure\bin\Debug\netcoreapp3.1\Library.Infrastructure.deps.json
+D:\IS-Soft\Git\LibraryAndAuth\Library.Infrastructure\bin\Debug\netcoreapp3.1\Library.Infrastructure.dll
+D:\IS-Soft\Git\LibraryAndAuth\Library.Infrastructure\bin\Debug\netcoreapp3.1\Library.Infrastructure.pdb
+D:\IS-Soft\Git\LibraryAndAuth\Library.Infrastructure\bin\Debug\netcoreapp3.1\Library.Core.dll
+D:\IS-Soft\Git\LibraryAndAuth\Library.Infrastructure\bin\Debug\netcoreapp3.1\Library.Core.pdb
+D:\IS-Soft\Git\LibraryAndAuth\Library.Infrastructure\obj\Debug\netcoreapp3.1\Library.Infrastructure.csprojAssemblyReference.cache
+D:\IS-Soft\Git\LibraryAndAuth\Library.Infrastructure\obj\Debug\netcoreapp3.1\Library.Infrastructure.csproj.CoreCompileInputs.cache
+D:\IS-Soft\Git\LibraryAndAuth\Library.Infrastructure\obj\Debug\netcoreapp3.1\Library.Infrastructure.AssemblyInfoInputs.cache
+D:\IS-Soft\Git\LibraryAndAuth\Library.Infrastructure\obj\Debug\netcoreapp3.1\Library.Infrastructure.AssemblyInfo.cs
+D:\IS-Soft\Git\LibraryAndAuth\Library.Infrastructure\obj\Debug\netcoreapp3.1\Library.Infrastructure.csproj.CopyComplete
+D:\IS-Soft\Git\LibraryAndAuth\Library.Infrastructure\obj\Debug\netcoreapp3.1\Library.Infrastructure.dll
+D:\IS-Soft\Git\LibraryAndAuth\Library.Infrastructure\obj\Debug\netcoreapp3.1\Library.Infrastructure.pdb

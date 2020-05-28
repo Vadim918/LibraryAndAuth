@@ -1,0 +1,28 @@
+﻿@using Library.Web
+@model Library.Web.LoginResult
+@{
+    ViewBag.Title = "Login";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="login-form">
+            <form asp-action="Login" method="post">
+                <h2>Please sign in</h2>
+                <label for="inputEmail" class="sr-only">Login</label>
+                <input type="text" id="inputEmail" class="form-control auth-login" placeholder="Login" name="email"
+                       required autofocus minlength="4" maxlength="128">
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control auth-pass" placeholder="Password" name="password"
+                       required minlength="5" maxlength="128">
+                @if (Model != LoginResult.Success)
+                {
+                    <p class="text-danger">@Model</p>
+                }
+                @Html.ValidationSummary(false)
+                <input class="btn btn-lg btn-primary btn-block" type="submit" value="Sign in"/>
+                <input type="hidden" name="returnUrl" value="@ViewData["ReturnUrl"]"/>
+            </form>
+        </div>
+    </div>
+</div>

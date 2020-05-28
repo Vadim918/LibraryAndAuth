@@ -1,0 +1,55 @@
+﻿@model BookEditModel
+
+@{
+    ViewBag.Title = "Add book";
+}
+
+    <div class="card">
+        <div class="card-header">
+            <h3>Add book</h3>
+        </div>
+        <form asp-action="Add">
+            <input asp-for="Id" />
+            <div class="card-body">
+                <div class="form-group">
+                    <label asp-for="Title"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PublisherId"></label>
+                    <select asp-for="PublisherId" asp-items="@(new SelectList(Model.Publishers, "Id", "Name"))">
+                        <option value="">Unknown</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PublishingDate"></label>
+                    <input type="date" asp-for="PublishingDate" asp-format="{0:yyyy-MM-dd}" class="form-control" data-val="false" />
+                    <span asp-validation-for="PublishingDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Rating"></label>
+                    <input asp-for="Rating" class="form-control" data-val="false" />
+                    <span asp-validation-for="Rating" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CoverUrl"></label>
+                    <input asp-for="CoverUrl" class="form-control" />
+                    <span asp-validation-for="CoverUrl" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description"></label>
+                    <textarea asp-for="Description" class="form-control" placeholder="Put description here" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="card-footer">
+                <input type="submit" class="btn btn-primary" value="Save" />
+                <a asp-action="List" class="btn btn-secondary">Return to list</a>
+            </div>
+        </form>
+    </div>
+
+@section Scripts {
+    <script src="~/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

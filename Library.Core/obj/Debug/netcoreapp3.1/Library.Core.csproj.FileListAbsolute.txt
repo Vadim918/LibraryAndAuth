@@ -1,0 +1,9 @@
+D:\IS-Soft\Git\LibraryAndAuth\Library.Core\bin\Debug\netcoreapp3.1\Library.Core.deps.json
+D:\IS-Soft\Git\LibraryAndAuth\Library.Core\bin\Debug\netcoreapp3.1\Library.Core.dll
+D:\IS-Soft\Git\LibraryAndAuth\Library.Core\bin\Debug\netcoreapp3.1\Library.Core.pdb
+D:\IS-Soft\Git\LibraryAndAuth\Library.Core\obj\Debug\netcoreapp3.1\Library.Core.csprojAssemblyReference.cache
+D:\IS-Soft\Git\LibraryAndAuth\Library.Core\obj\Debug\netcoreapp3.1\Library.Core.csproj.CoreCompileInputs.cache
+D:\IS-Soft\Git\LibraryAndAuth\Library.Core\obj\Debug\netcoreapp3.1\Library.Core.AssemblyInfoInputs.cache
+D:\IS-Soft\Git\LibraryAndAuth\Library.Core\obj\Debug\netcoreapp3.1\Library.Core.AssemblyInfo.cs
+D:\IS-Soft\Git\LibraryAndAuth\Library.Core\obj\Debug\netcoreapp3.1\Library.Core.dll
+D:\IS-Soft\Git\LibraryAndAuth\Library.Core\obj\Debug\netcoreapp3.1\Library.Core.pdb

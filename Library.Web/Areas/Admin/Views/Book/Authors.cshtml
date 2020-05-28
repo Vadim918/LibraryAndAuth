@@ -1,0 +1,42 @@
+﻿@model BookAuthorsModel
+
+@{
+    ViewBag.Title = "Book authors";
+
+    var list = Model.PotentialAuthors.Select(x => new SelectListItem(x.ToString(), x.Id.ToString())).ToList();
+}
+
+<div class="card">
+    <div class="card-header">
+        <h3>Authors of @Model.BookTitle</h3>
+    </div>
+    <div class="card-body">
+        <form asp-action="AddAuthor" asp-route-id="@Model.Id">
+            Add author: <select asp-for="@Model.AuthorId" asp-items="list"></select>
+            <input type="submit" class="btn btn-primary" value="Add" />
+        </form>
+        <hr />
+        <table class="table table-striped table-sm table-bordered">
+            <tr>
+                <th>Name</th>
+                <th class="text-center" style="min-width: 150px">Actions</th>
+            </tr>
+            @foreach (var author in Model.Authors)
+            {
+                <tr>
+                    <td>@author.ToString()</td>
+                    <td class="text-center">
+                        <form asp-action="RemoveAuthor" asp-route-id="@Model.Id" style="display: inline">
+                            <input type="hidden" name="authorId" value="@author.Id" />
+                            <input type="submit" class="btn btn-secondary" value="Remove" />
+                        </form>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div class="card-footer">
+        <a asp-action="List" class="btn btn-secondary">Return to list</a>
+    </div>
+</div>
+

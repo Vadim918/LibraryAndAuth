@@ -1,0 +1,10 @@
+D:\IS-Soft\Git\LibraryAndAuth\Library.Db\bin\Debug\Library.Db.dacpac
+D:\IS-Soft\Git\LibraryAndAuth\Library.Db\bin\Debug\Library.Db.dll
+D:\IS-Soft\Git\LibraryAndAuth\Library.Db\bin\Debug\Library.Db.pdb
+D:\IS-Soft\Git\LibraryAndAuth\Library.Db\obj\Debug\Library.Db.sqlprojAssemblyReference.cache
+D:\IS-Soft\Git\LibraryAndAuth\Library.Db\obj\Debug\Model.xml
+D:\IS-Soft\Git\LibraryAndAuth\Library.Db\obj\Debug\refactor.xml
+D:\IS-Soft\Git\LibraryAndAuth\Library.Db\obj\Debug\postdeploy.sql
+D:\IS-Soft\Git\LibraryAndAuth\Library.Db\obj\Debug\predeploy.sql
+D:\IS-Soft\Git\LibraryAndAuth\Library.Db\obj\Debug\Library.Db.dll
+D:\IS-Soft\Git\LibraryAndAuth\Library.Db\obj\Debug\Library.Db.pdb
