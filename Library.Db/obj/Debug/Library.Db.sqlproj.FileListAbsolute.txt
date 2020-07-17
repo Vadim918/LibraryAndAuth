@@ -8,3 +8,9 @@ D:\IS-Soft\Git\LibraryAndAuth\Library.Db\obj\Debug\postdeploy.sql
 D:\IS-Soft\Git\LibraryAndAuth\Library.Db\obj\Debug\predeploy.sql
 D:\IS-Soft\Git\LibraryAndAuth\Library.Db\obj\Debug\Library.Db.dll
 D:\IS-Soft\Git\LibraryAndAuth\Library.Db\obj\Debug\Library.Db.pdb
+D:\Library Project\LibraryAndAuth\Library.Db\bin\Debug\Library.Db.dacpac
+D:\Library Project\LibraryAndAuth\Library.Db\bin\Debug\Library.Db.dll
+D:\Library Project\LibraryAndAuth\Library.Db\bin\Debug\Library.Db.pdb
+D:\Library Project\LibraryAndAuth\Library.Db\obj\Debug\Library.Db.sqlprojAssemblyReference.cache
+D:\Library Project\LibraryAndAuth\Library.Db\obj\Debug\Library.Db.dll
+D:\Library Project\LibraryAndAuth\Library.Db\obj\Debug\Library.Db.pdb

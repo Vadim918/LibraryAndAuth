@@ -10,3 +10,15 @@ D:\IS-Soft\Git\LibraryAndAuth\Library.Infrastructure\obj\Debug\netcoreapp3.1\Lib
 D:\IS-Soft\Git\LibraryAndAuth\Library.Infrastructure\obj\Debug\netcoreapp3.1\Library.Infrastructure.csproj.CopyComplete
 D:\IS-Soft\Git\LibraryAndAuth\Library.Infrastructure\obj\Debug\netcoreapp3.1\Library.Infrastructure.dll
 D:\IS-Soft\Git\LibraryAndAuth\Library.Infrastructure\obj\Debug\netcoreapp3.1\Library.Infrastructure.pdb
+D:\Library Project\LibraryAndAuth\Library.Infrastructure\bin\Debug\netcoreapp3.1\Library.Infrastructure.deps.json
+D:\Library Project\LibraryAndAuth\Library.Infrastructure\bin\Debug\netcoreapp3.1\Library.Infrastructure.dll
+D:\Library Project\LibraryAndAuth\Library.Infrastructure\bin\Debug\netcoreapp3.1\Library.Infrastructure.pdb
+D:\Library Project\LibraryAndAuth\Library.Infrastructure\bin\Debug\netcoreapp3.1\Library.Core.dll
+D:\Library Project\LibraryAndAuth\Library.Infrastructure\bin\Debug\netcoreapp3.1\Library.Core.pdb
+D:\Library Project\LibraryAndAuth\Library.Infrastructure\obj\Debug\netcoreapp3.1\Library.Infrastructure.csprojAssemblyReference.cache
+D:\Library Project\LibraryAndAuth\Library.Infrastructure\obj\Debug\netcoreapp3.1\Library.Infrastructure.AssemblyInfoInputs.cache
+D:\Library Project\LibraryAndAuth\Library.Infrastructure\obj\Debug\netcoreapp3.1\Library.Infrastructure.AssemblyInfo.cs
+D:\Library Project\LibraryAndAuth\Library.Infrastructure\obj\Debug\netcoreapp3.1\Library.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Library Project\LibraryAndAuth\Library.Infrastructure\obj\Debug\netcoreapp3.1\Library.Infrastructure.csproj.CopyComplete
+D:\Library Project\LibraryAndAuth\Library.Infrastructure\obj\Debug\netcoreapp3.1\Library.Infrastructure.dll
+D:\Library Project\LibraryAndAuth\Library.Infrastructure\obj\Debug\netcoreapp3.1\Library.Infrastructure.pdb

@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Web\\Library.Web.csproj": {}
+    "D:\\Library Project\\LibraryAndAuth\\Library.Web\\Library.Web.csproj": {}
   },
   "projects": {
-    "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Core\\Library.Core.csproj": {
+    "D:\\Library Project\\LibraryAndAuth\\Library.Core\\Library.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Core\\Library.Core.csproj",
+        "projectUniqueName": "D:\\Library Project\\LibraryAndAuth\\Library.Core\\Library.Core.csproj",
         "projectName": "Library.Core",
-        "projectPath": "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Core\\Library.Core.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Core\\obj\\",
+        "projectPath": "D:\\Library Project\\LibraryAndAuth\\Library.Core\\Library.Core.csproj",
+        "packagesPath": "C:\\Users\\multi\\.nuget\\packages\\",
+        "outputPath": "D:\\Library Project\\LibraryAndAuth\\Library.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\multi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,24 +52,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj": {
+    "D:\\Library Project\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Library Project\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj",
         "projectName": "Library.Infrastructure",
-        "projectPath": "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Infrastructure\\obj\\",
+        "projectPath": "D:\\Library Project\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\multi\\.nuget\\packages\\",
+        "outputPath": "D:\\Library Project\\LibraryAndAuth\\Library.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\multi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,8 +79,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Core\\Library.Core.csproj": {
-                "projectPath": "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Core\\Library.Core.csproj"
+              "D:\\Library Project\\LibraryAndAuth\\Library.Core\\Library.Core.csproj": {
+                "projectPath": "D:\\Library Project\\LibraryAndAuth\\Library.Core\\Library.Core.csproj"
               }
             }
           }
@@ -120,24 +114,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Web\\Library.Web.csproj": {
+    "D:\\Library Project\\LibraryAndAuth\\Library.Web\\Library.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Web\\Library.Web.csproj",
+        "projectUniqueName": "D:\\Library Project\\LibraryAndAuth\\Library.Web\\Library.Web.csproj",
         "projectName": "Library.Web",
-        "projectPath": "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Web\\Library.Web.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Web\\obj\\",
+        "projectPath": "D:\\Library Project\\LibraryAndAuth\\Library.Web\\Library.Web.csproj",
+        "packagesPath": "C:\\Users\\multi\\.nuget\\packages\\",
+        "outputPath": "D:\\Library Project\\LibraryAndAuth\\Library.Web\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\multi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -150,11 +141,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Core\\Library.Core.csproj": {
-                "projectPath": "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Core\\Library.Core.csproj"
+              "D:\\Library Project\\LibraryAndAuth\\Library.Core\\Library.Core.csproj": {
+                "projectPath": "D:\\Library Project\\LibraryAndAuth\\Library.Core\\Library.Core.csproj"
               },
-              "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj": {
-                "projectPath": "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj"
+              "D:\\Library Project\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj": {
+                "projectPath": "D:\\Library Project\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj"
               }
             }
           }
@@ -185,7 +176,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

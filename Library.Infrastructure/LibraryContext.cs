@@ -7,7 +7,7 @@ namespace Library.Infrastructure
     internal class LibraryContext : DbContext
     {
         private const string Connection =
-            "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Library;Integrated Security=True";
+            "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Library.Db;Integrated Security=True";
 
         public DbSet<Author> Authors { get; set; }
         public DbSet<Book> Books { get; set; }

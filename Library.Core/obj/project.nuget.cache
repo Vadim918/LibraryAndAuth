@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PI85cQ+itVRzflVvJHruXPovfRhyOMD299N+MDVKpUZUXQEzy3jy52fSjGteuxk9nNb1/J7vRpQlPq6wp+of0A==",
+  "dgSpecHash": "h7CRmikMoVcEED25OLFSBI5zG4c3Ogqb3+sWZCLoMKt95/cQ7tGykTCOGorgT8Jz79nE85vcHZJsD9ML01zTYA==",
   "success": true,
-  "projectFilePath": "D:\\IS-Soft\\Git\\LibraryAndAuth\\Library.Core\\Library.Core.csproj",
+  "projectFilePath": "D:\\Library Project\\LibraryAndAuth\\Library.Core\\Library.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
