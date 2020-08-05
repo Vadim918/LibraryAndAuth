@@ -193,7 +193,7 @@ namespace Library.Web.Areas.Admin.Controllers
                 _uow.BookAuthorRepository.Remove(bookAuthor);
                 _uow.Commit();
             }
-
+             
             return RedirectToAction("Authors", new {id});
         }
     }

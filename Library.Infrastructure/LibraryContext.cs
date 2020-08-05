@@ -6,17 +6,13 @@ namespace Library.Infrastructure
 {
     internal class LibraryContext : DbContext
     {
-        private const string Connection =
-            "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Library.Db;Integrated Security=True";
-
         public DbSet<Author> Authors { get; set; }
         public DbSet<Book> Books { get; set; }
         public DbSet<Publisher> Publishers { get; set; }
         public DbSet<Publisher> Users { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public LibraryContext(DbContextOptions<LibraryContext> options) : base(options)
         {
-            optionsBuilder.UseSqlServer(Connection);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
