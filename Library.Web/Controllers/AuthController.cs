@@ -14,7 +14,10 @@ namespace Library.Web.Controllers
     {
         private readonly IUnitOfWork _uow;
 
-        public AuthController(IUnitOfWork uow) => _uow = uow;
+        public AuthController(IUnitOfWork uow)
+        {
+            _uow = uow;
+        }
 
         [Route("[action]")]
         public IActionResult Login(string returnUrl)
@@ -29,37 +32,24 @@ namespace Library.Web.Controllers
             ViewData["ReturnUrl"] = returnUrl;
 
             if (string.IsNullOrEmpty(email))
-            {
                 ModelState.AddModelError("email", "Email cannot be empty");
-            }
             else if (email.Length < 4 || email.Length > 128)
-            {
                 ModelState.AddModelError("email", "Email's length must be [4..128]");
-            }
 
             if (string.IsNullOrEmpty(password))
-            {
                 ModelState.AddModelError("password", "Password cannot be empty");
-            }
             else if (password.Length < 5 || password.Length > 128)
-            {
                 ModelState.AddModelError("password", "Password's length must be [5..128]");
-            }
 
-            if (!ModelState.IsValid)
-            {
-                return View();
-            }
+            if (!ModelState.IsValid) return View();
 
             var user = _uow.UserRepository.FindByEmail(email);
-            if (user == null || user.PasswordHash != password)
-            {
-                return View(LoginResult.IncorrectPassword);
-            }
+            if (user == null || user.PasswordHash != password) return View(LoginResult.IncorrectPassword);
 
             var claims = new List<Claim>
             {
-                new Claim("userId", user.Id.ToString()),
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                new Claim(ClaimTypes.Email, user.Email),
                 new Claim(ClaimTypes.Name, $"{user.FirstName} {user.LastName}")
             };
             claims.AddRange(user.UserRoles.Select(x => new Claim(ClaimTypes.Role, x.Role.Name)));
@@ -68,10 +58,7 @@ namespace Library.Web.Controllers
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal,
                 new AuthenticationProperties {AllowRefresh = true});
 
-            if (string.IsNullOrEmpty(returnUrl))
-            {
-                return RedirectToAction("Index", "Home");
-            }
+            if (string.IsNullOrEmpty(returnUrl)) return RedirectToAction("Index", "Home");
 
             return Redirect(returnUrl);
         }

@@ -11,12 +11,15 @@ using Microsoft.AspNetCore.Mvc;
 namespace Library.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles="Admin")]
+    [Authorize(Roles = "Admin")]
     public class BookController : Controller
     {
         private readonly IUnitOfWork _uow;
 
-        public BookController(IUnitOfWork uow) => _uow = uow;
+        public BookController(IUnitOfWork uow)
+        {
+            _uow = uow;
+        }
 
         [Route("[area]/[controller]/[action]")]
         public IActionResult List(BookListViewModel model)
@@ -25,13 +28,8 @@ namespace Library.Web.Areas.Admin.Controllers
 
             Expression<Func<Book, bool>> filter = null;
             if (Guid.TryParse(model.PublisherId, out var publisherId))
-            {
                 filter = x => x.PublisherId == publisherId;
-            }
-            else if (model.PublisherId == "None")
-            {
-                filter = x => x.PublisherId == null;
-            }
+            else if (model.PublisherId == "None") filter = x => x.PublisherId == null;
 
             model.Books = _uow.BookRepository.List(filter);
             return View(model);
@@ -41,10 +39,7 @@ namespace Library.Web.Areas.Admin.Controllers
         public IActionResult Edit(Guid id)
         {
             var book = _uow.BookRepository.Find(id);
-            if (book == null)
-            {
-                return NotFound();
-            }
+            if (book == null) return NotFound();
 
             var model = new BookEditModel
             {
@@ -71,10 +66,7 @@ namespace Library.Web.Areas.Admin.Controllers
             }
 
             var book = _uow.BookRepository.Find(model.Id);
-            if (book == null)
-            {
-                return NotFound();
-            }
+            if (book == null) return NotFound();
 
             book.Title = model.Title;
             book.PublisherId = model.PublisherId;
@@ -91,10 +83,7 @@ namespace Library.Web.Areas.Admin.Controllers
         public IActionResult Delete(Guid id)
         {
             var book = _uow.BookRepository.Find(id);
-            if (book == null)
-            {
-                return NotFound();
-            }
+            if (book == null) return NotFound();
 
             _uow.BookRepository.Remove(book);
             _uow.Commit();
@@ -142,10 +131,7 @@ namespace Library.Web.Areas.Admin.Controllers
         public IActionResult Authors(Guid id)
         {
             var book = _uow.BookRepository.Find(id);
-            if (book == null)
-            {
-                return NotFound();
-            }
+            if (book == null) return NotFound();
 
             var authors = _uow.AuthorRepository.List();
 
@@ -160,28 +146,19 @@ namespace Library.Web.Areas.Admin.Controllers
         public IActionResult AddAuthor(Guid id, Guid authorId)
         {
             var bookAuthor = _uow.BookAuthorRepository.Find(id, authorId);
-            if (bookAuthor != null)
-            {
-                return RedirectToAction("Authors", new { id });
-            }
+            if (bookAuthor != null) return RedirectToAction("Authors", new {id});
 
             var book = _uow.BookRepository.Find(id);
-            if (book == null)
-            {
-                return NotFound();
-            }
+            if (book == null) return NotFound();
 
             var author = _uow.AuthorRepository.Find(authorId);
-            if (author == null)
-            {
-                return NotFound();
-            }
+            if (author == null) return NotFound();
 
             bookAuthor = new BookAuthor {BookId = id, AuthorId = authorId};
             _uow.BookAuthorRepository.Add(bookAuthor);
             _uow.Commit();
 
-            return RedirectToAction("Authors", new { id });
+            return RedirectToAction("Authors", new {id});
         }
 
         [HttpPost("[area]/[controller]/[action]/{id:guid}")]
@@ -193,7 +170,7 @@ namespace Library.Web.Areas.Admin.Controllers
                 _uow.BookAuthorRepository.Remove(bookAuthor);
                 _uow.Commit();
             }
-             
+
             return RedirectToAction("Authors", new {id});
         }
     }
