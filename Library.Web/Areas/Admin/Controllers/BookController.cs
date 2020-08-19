@@ -3,6 +3,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using Library.Core.Entities;
 using Library.Core.Repositories;
+using Library.Web.Areas.Admin.Extensions;
 using Library.Web.Areas.Admin.ViewModels;
 using Library.Web.ViewModels;
 using Microsoft.AspNetCore.Authorization;
@@ -41,18 +42,8 @@ namespace Library.Web.Areas.Admin.Controllers
             var book = _uow.BookRepository.Find(id);
             if (book == null) return NotFound();
 
-            var model = new BookEditModel
-            {
-                Id = book.Id,
-                Title = book.Title,
-                Description = book.Description,
-                PublishingDate = book.PublishingDate,
-                Rating = book.Rating,
-                CoverUrl = book.CoverUrl,
-                PublisherId = book.PublisherId,
-                Publishers = _uow.PublisherRepository.List().ToList()
-            };
-
+            var model = book.EditBookToView();
+            model.Publishers = _uow.PublisherRepository.List().ToList();
             return View(model);
         }
 
@@ -110,19 +101,7 @@ namespace Library.Web.Areas.Admin.Controllers
                 model.Publishers = _uow.PublisherRepository.List().ToList();
                 return View(model);
             }
-
-            var book = new Book
-            {
-                Id = Guid.NewGuid(),
-                Title = model.Title,
-                PublisherId = model.PublisherId,
-                Description = string.IsNullOrWhiteSpace(model.Description) ? null : model.Description,
-                PublishingDate = model.PublishingDate,
-                Rating = model.Rating,
-                CoverUrl = model.CoverUrl
-            };
-
-            _uow.BookRepository.Add(book);
+            _uow.BookRepository.Add(model.BookToDomain());
             _uow.Commit();
             return RedirectToAction("List");
         }
