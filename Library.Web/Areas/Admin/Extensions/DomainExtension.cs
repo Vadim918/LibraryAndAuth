@@ -6,12 +6,7 @@ namespace Library.Web.Areas.Admin.Extensions
 {
     public static class DomainExtension
     {
-        public static BookAuthorsModel AuthorAddToDomain(this Book book)
-        {
-            return new BookAuthorsModel();
-        }
-
-        public static Book BookToDomain(this BookEditModel model)
+        public static Book AddBookToDomain(this BookEditModel model)
         {
             return new Book
             {
@@ -37,6 +32,16 @@ namespace Library.Web.Areas.Admin.Extensions
                 CoverUrl = book.CoverUrl,
                 PublisherId = book.PublisherId
             };
+        }
+
+        public static void EditBookToDomain(this Book book, BookEditModel model)
+        {
+            book.Title = model.Title;
+            book.PublisherId = model.PublisherId;
+            book.Description = string.IsNullOrWhiteSpace(model.Description) ? null : model.Description;
+            book.PublishingDate = model.PublishingDate;
+            book.Rating = model.Rating;
+            book.CoverUrl = model.CoverUrl;
         }
     }
 }

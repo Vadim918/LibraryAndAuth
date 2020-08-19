@@ -59,12 +59,7 @@ namespace Library.Web.Areas.Admin.Controllers
             var book = _uow.BookRepository.Find(model.Id);
             if (book == null) return NotFound();
 
-            book.Title = model.Title;
-            book.PublisherId = model.PublisherId;
-            book.Description = string.IsNullOrWhiteSpace(model.Description) ? null : model.Description;
-            book.PublishingDate = model.PublishingDate;
-            book.Rating = model.Rating;
-            book.CoverUrl = model.CoverUrl;
+           book.EditBookToDomain(model);
 
             _uow.Commit();
             return RedirectToAction("List");
@@ -101,7 +96,7 @@ namespace Library.Web.Areas.Admin.Controllers
                 model.Publishers = _uow.PublisherRepository.List().ToList();
                 return View(model);
             }
-            _uow.BookRepository.Add(model.BookToDomain());
+            _uow.BookRepository.Add(model.AddBookToDomain());
             _uow.Commit();
             return RedirectToAction("List");
         }
@@ -115,7 +110,11 @@ namespace Library.Web.Areas.Admin.Controllers
             var authors = _uow.AuthorRepository.List();
 
             var model = new BookAuthorsModel
-                {Id = book.Id, BookTitle = book.Title, Authors = book.BookAuthor.Select(x => x.Author)};
+            {
+                Id = book.Id, 
+                BookTitle = book.Title,
+                Authors = book.BookAuthor.Select(x => x.Author)
+            };
             model.PotentialAuthors = authors.Except(model.Authors);
 
             return View(model);
