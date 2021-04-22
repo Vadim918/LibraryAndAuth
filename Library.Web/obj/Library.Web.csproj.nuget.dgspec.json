@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Library Project\\LibraryAndAuth\\Library.Web\\Library.Web.csproj": {}
+    "D:\\Azure\\Library\\LibraryAndAuth\\Library.Web\\Library.Web.csproj": {}
   },
   "projects": {
-    "D:\\Library Project\\LibraryAndAuth\\Library.Core\\Library.Core.csproj": {
+    "D:\\Azure\\Library\\LibraryAndAuth\\Library.Core\\Library.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Library Project\\LibraryAndAuth\\Library.Core\\Library.Core.csproj",
+        "projectUniqueName": "D:\\Azure\\Library\\LibraryAndAuth\\Library.Core\\Library.Core.csproj",
         "projectName": "Library.Core",
-        "projectPath": "D:\\Library Project\\LibraryAndAuth\\Library.Core\\Library.Core.csproj",
-        "packagesPath": "C:\\Users\\multi\\.nuget\\packages\\",
-        "outputPath": "D:\\Library Project\\LibraryAndAuth\\Library.Core\\obj\\",
+        "projectPath": "D:\\Azure\\Library\\LibraryAndAuth\\Library.Core\\Library.Core.csproj",
+        "packagesPath": "C:\\Users\\mltik\\.nuget\\packages\\",
+        "outputPath": "D:\\Azure\\Library\\LibraryAndAuth\\Library.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\multi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mltik\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -52,21 +54,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Library Project\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj": {
+    "D:\\Azure\\Library\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Library Project\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Azure\\Library\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj",
         "projectName": "Library.Infrastructure",
-        "projectPath": "D:\\Library Project\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\multi\\.nuget\\packages\\",
-        "outputPath": "D:\\Library Project\\LibraryAndAuth\\Library.Infrastructure\\obj\\",
+        "projectPath": "D:\\Azure\\Library\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\mltik\\.nuget\\packages\\",
+        "outputPath": "D:\\Azure\\Library\\LibraryAndAuth\\Library.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\multi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mltik\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,9 +80,10 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Library Project\\LibraryAndAuth\\Library.Core\\Library.Core.csproj": {
-                "projectPath": "D:\\Library Project\\LibraryAndAuth\\Library.Core\\Library.Core.csproj"
+              "D:\\Azure\\Library\\LibraryAndAuth\\Library.Core\\Library.Core.csproj": {
+                "projectPath": "D:\\Azure\\Library\\LibraryAndAuth\\Library.Core\\Library.Core.csproj"
               }
             }
           }
@@ -93,6 +96,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -114,21 +118,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Library Project\\LibraryAndAuth\\Library.Web\\Library.Web.csproj": {
+    "D:\\Azure\\Library\\LibraryAndAuth\\Library.Web\\Library.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Library Project\\LibraryAndAuth\\Library.Web\\Library.Web.csproj",
+        "projectUniqueName": "D:\\Azure\\Library\\LibraryAndAuth\\Library.Web\\Library.Web.csproj",
         "projectName": "Library.Web",
-        "projectPath": "D:\\Library Project\\LibraryAndAuth\\Library.Web\\Library.Web.csproj",
-        "packagesPath": "C:\\Users\\multi\\.nuget\\packages\\",
-        "outputPath": "D:\\Library Project\\LibraryAndAuth\\Library.Web\\obj\\",
+        "projectPath": "D:\\Azure\\Library\\LibraryAndAuth\\Library.Web\\Library.Web.csproj",
+        "packagesPath": "C:\\Users\\mltik\\.nuget\\packages\\",
+        "outputPath": "D:\\Azure\\Library\\LibraryAndAuth\\Library.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\multi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mltik\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -140,12 +144,13 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Library Project\\LibraryAndAuth\\Library.Core\\Library.Core.csproj": {
-                "projectPath": "D:\\Library Project\\LibraryAndAuth\\Library.Core\\Library.Core.csproj"
+              "D:\\Azure\\Library\\LibraryAndAuth\\Library.Core\\Library.Core.csproj": {
+                "projectPath": "D:\\Azure\\Library\\LibraryAndAuth\\Library.Core\\Library.Core.csproj"
               },
-              "D:\\Library Project\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj": {
-                "projectPath": "D:\\Library Project\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj"
+              "D:\\Azure\\Library\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj": {
+                "projectPath": "D:\\Azure\\Library\\LibraryAndAuth\\Library.Infrastructure\\Library.Infrastructure.csproj"
               }
             }
           }
@@ -158,6 +163,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
@@ -192,7 +198,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

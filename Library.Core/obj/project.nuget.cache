@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h7CRmikMoVcEED25OLFSBI5zG4c3Ogqb3+sWZCLoMKt95/cQ7tGykTCOGorgT8Jz79nE85vcHZJsD9ML01zTYA==",
+  "dgSpecHash": "jsBoTrbTeW6j3q/XLGryGqF7efCqRf64ErXDKRh7RykDf7AXCmywBUXpXtT5JXYQNUJUE27c5DeyPL5tHeI4Wg==",
   "success": true,
-  "projectFilePath": "D:\\Library Project\\LibraryAndAuth\\Library.Core\\Library.Core.csproj",
+  "projectFilePath": "D:\\Azure\\Library\\LibraryAndAuth\\Library.Core\\Library.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

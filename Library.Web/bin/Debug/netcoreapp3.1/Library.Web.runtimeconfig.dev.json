@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\multi\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\multi\\.nuget\\packages"
+      "C:\\Users\\mltik\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\mltik\\.nuget\\packages"
     ]
   }
 }
